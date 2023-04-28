@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Nav_Bar from '../components/Navbar';
+import admin from '../routes/images/admin.png';
+import library from '../routes/images/library.png';
+import program from '../routes/images/program.png';
+import youtube from '../routes/images/youtube.png';
 
 const Section = styled.div`
     height : 100vh;
@@ -14,17 +18,17 @@ const Project = () => {
   const data = [
     {
       name:"Admin Dashboard",
-      img : "src/routes/images/admin.png",
+      img : admin,
       link : "https://b43-admin-dashboard.netlify.app/",
     },
     {
       name:"Library App",
-      img : "library.png",
+      img : library,
       link : "https://b43-library-management.netlify.app/",
     },
     {
       name:"Youtube Clone",
-      img : "youtube.png",
+      img : youtube,
       link : "https://b43-youtubeclone.netlify.app/",
     }
   ]
