@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Nav_Bar from '../components/Navbar';
 import admin from '../routes/images/admin.png';
 import library from '../routes/images/library.png';
-import program from '../routes/images/program.png';
 import youtube from '../routes/images/youtube.png';
+import { TypeAnimation } from 'react-type-animation';
 
 const Section = styled.div`
     height : 100vh;
@@ -37,9 +37,13 @@ const Project = () => {
     <Section>
       {data.map((item,idx)=>{
         return(
-         <div className='card'>
-            <p style={{color:"black"}}>{item.name}</p>
-            <img style={{width:"100%"}} src={item.img}/>
+         <div className='card' key={idx}>
+            <TypeAnimation
+              sequence={[`${item.name}`, 500,'',200]}
+              style={{ fontSize: '2em' }}
+              repeat={Infinity}
+            />
+            <img style={{width:"100%",height:"180px"}} src={item.img}/>
             <a className='btn' href={item.link} target='_blank'>Link</a>
          </div> 
         )

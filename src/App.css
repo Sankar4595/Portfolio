@@ -59,6 +59,9 @@ a{
     text-align: start;
 }
 .card{
-    width: 200px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:mediumslateblue;
 }
