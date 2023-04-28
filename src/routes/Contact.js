@@ -16,6 +16,7 @@ const Section = styled.div`
 
 const Contact = () => {
     const history = useNavigate();
+    
     const form = useRef();
 
     const sendEmail = (e) => {
