@@ -1,18 +1,9 @@
 import React, { useRef } from 'react';
-import styled from 'styled-components';
-import Nav_Bar from '../components/Navbar';
+import './index.css';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
-const Section = styled.div`
-    height : 100vh;
-    scroll-snap-type: none;
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-    align-item:flex-start;
-    justify-content:center;
-  `
+
 
 const Contact = () => {
     const history = useNavigate();
@@ -31,8 +22,7 @@ const Contact = () => {
         history('/');
     };
     return <>
-    <Nav_Bar/>
-    <Section>
+    <div className='contact-body'>
       <h1>Contact</h1>
       <form className='contact' ref={form} onSubmit={sendEmail}>
         <label>Name</label>
@@ -43,7 +33,7 @@ const Contact = () => {
         <textarea name="message" />
         <input className='btn' type="submit" value="Send" />
       </form>
-    </Section>
+    </div>
   </>
 }
 

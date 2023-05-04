@@ -41,27 +41,38 @@ a{
     transition: 0.3s;
 
   }
-.contact{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-    justify-content: center;
-}
-.contact>input{
-    width: 450px;
-    height: 50px;
-    text-align: start;
-}
-.contact>textarea{
-    width: 450px;
-    height: 150px;
-    text-align: start;
-}
-.card{
-    width: 400px;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color:mediumslateblue;
+  .hamburger{
+    display: none;
+  }
+
+  @media screen and (max-width : 1040px){
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100vh;
+        background:black;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.5s;
+    }
+    .nav-menu.active{
+        left: 0;
+        flex-direction: column;
+    }
+    .hamburger{
+        display: initial;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand{
+        width: 100%;
+    }
 }

@@ -5,17 +5,12 @@ import About from './routes/About';
 import Contact from './routes/Contact';
 import Project from './routes/Project';
 import { Route, Routes } from 'react-router-dom';
-import styled from 'styled-components';
+import Nav_Bar from './components/Navbar';
 
 
 function App() {
   return <>
-    {/* <Container>
-      <Home/>
-      <About/>
-      <Project/>
-      <Contact/>
-    </Container> */}
+    <Nav_Bar/>
     <Routes>
       <Route exact path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>

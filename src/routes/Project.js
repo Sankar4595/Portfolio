@@ -1,18 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import Nav_Bar from '../components/Navbar';
+import './index.css';
 import admin from '../routes/images/admin.png';
 import library from '../routes/images/library.png';
 import youtube from '../routes/images/youtube.png';
 import { TypeAnimation } from 'react-type-animation';
 
-const Section = styled.div`
-    height : 100vh;
-    scroll-snap-type: none;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-  `
 
 const Project = () => {
   const data = [
@@ -33,8 +25,9 @@ const Project = () => {
     }
   ]
     return <>
-    <Nav_Bar/>
-    <Section>
+    <div className='project'>
+      <h1>Projects</h1>
+      <div className='card-body'>
       {data.map((item,idx)=>{
         return(
          <div className='card' key={idx}>
@@ -48,7 +41,9 @@ const Project = () => {
          </div> 
         )
       })}
-    </Section>
+      </div>
+      
+    </div>
   </>
 }
 

@@ -26,7 +26,6 @@ const Section = styled.div`
   `
 const Home = () => {
   return <>
-    <Nav_Bar/>
     <Container>
     <Section>
       <h1>Hi there</h1><br/>
