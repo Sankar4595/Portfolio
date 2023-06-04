@@ -36,7 +36,7 @@ const Home = () => {
         repeat={Infinity}
       />
       <div className='btn-grp'>
-        <a className='btn' target='_blank' href='https://drive.google.com/file/d/125OCWfiOrMWvQxDEpYYMIinyydD7aU2x/view?usp=sharing'>Resume</a>
+        <a className='btn' target='_blank' href='https://drive.google.com/file/d/13GUvEz0M_YrueDhWUmg9WWR7zuJ59026/view?usp=sharing'>Resume</a>
         <a className='btn btn-light' target='_blank' href='https://www.linkedin.com/in/sankaranarayanan-saminathan-675359a0/'>LinkedIn</a>
         <a className='btn' target='_blank' href='https://github.com/Sankar4595'>Github</a>
       </div>
